@@ -1,0 +1,57 @@
+{
+    "deliveryManMoto": {
+      "nome": "Carlos Eduardo Silva",
+      "cpf": "123.456.789-01",
+      "email": "carlos.silva@email.com",
+      "telefone": "(11) 98765-4321",
+      "cep": "01001-000",
+      "numero": "123",
+      "complemento": "Apto 45B",
+      "metodo": "Moto",
+      "cnh": "/covers/cnh/cnh1.jpg"
+    },
+    "deliveryMan_invalidEmail": {
+      "nome": "Fernanda Oliveira Souza",
+      "cpf": "987.654.321-00",
+      "email": "fernanda.souza@email.com",
+      "telefone": "(21) 99876-5432",
+      "cep": "22041-001",
+      "numero": "456",
+      "complemento": "Casa 2",
+      "metodo": "Moto",
+      "cnh": "/covers/cnh/cnh1.jpg"
+    },
+    "deliveryMan_invalidoCPF": {
+        "nome": "João Marcelo Pereira",
+        "cpf": "321.654.987-22",
+        "email": "joao.pereira@email.com",
+        "telefone": "(31) 91234-5678",
+        "cep": "30130-000",
+        "numero": "789",
+        "complemento": "Bloco C, Apto 301",
+        "metodo": "Moto",
+        "cnh": "/covers/cnh/cnh1.jpg"
+    },
+    "deliveryManBicicleta": {
+        "nome": "Mariana Costa Lima",
+        "cpf": "456.123.789-33",
+        "email": "mariana.lima@email.com",
+        "telefone": "(41) 92345-6789",
+        "cep": "80010-000",
+        "numero": "159",
+        "complemento": "Sobrado",
+        "metodo": "Bicicleta",
+        "cnh": "/covers/cnh/cnh1.jpg"
+    },
+      "deliveryManCarro": {
+        "nome": "Ricardo Alves Menezes",
+        "cpf": "789.321.456-44",
+        "email": "ricardo.menezes@email.com",
+        "telefone": "(51) 93456-7890",
+        "cep": "90010-000",
+        "numero": "753",
+        "complemento": "Sala 5",
+        "metodo": "Van/Carro",
+        "cnh": "/covers/cnh/cnh1.jpg" 
+      }      
+  }

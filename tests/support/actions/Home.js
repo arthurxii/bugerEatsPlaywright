@@ -10,6 +10,7 @@ export class Home {
     }
 
     async openForm() {
+        await this.visit()
         await this.page.locator('a[href$="deliver"]').click()
     }
 }

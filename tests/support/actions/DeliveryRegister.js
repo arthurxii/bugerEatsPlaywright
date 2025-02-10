@@ -6,7 +6,7 @@ export class DeliveryRegister {
     }
 
     async submit() {
-        await this.page.getByRole('button', {name : 'Cadastre-se para fazer entregas'}).click()
+        await this.page.getByRole('button', { name: 'Cadastre-se para fazer entregas' }).click()
     }
 
     async deliveryForm(deliveryMan) {
@@ -16,13 +16,16 @@ export class DeliveryRegister {
         await this.page.getByPlaceholder('Whatsapp').fill(deliveryMan.telefone)
 
         await this.page.getByPlaceholder('CEP').fill(deliveryMan.cep)
-        await this.page.getByRole('button', {name: 'Buscar CEP'}).click
-        await this.page.getByPlaceholder('Número').fill(deliveryMan.numero)
+        await this.page.getByRole('button', { name: 'Buscar CEP' }).click()
+        await this.page.getByRole('textbox', { name: 'Número', exact: true }).fill(deliveryMan.numero)
         await this.page.getByPlaceholder('Complemento').fill(deliveryMan.complemento)
-        // await page.getByRole('listitem').filter({ hasText: 'Moto' }).click();
-        await this.page.locator('li').filter({ hasText: deliveryMan.metodo }).click();
-        await page.getByText('Foto da sua CNH').setInputFiles('/tests/support/fixtures' + deliveryMan.cnh)
+        await this.page.locator('li').filter({ hasText: deliveryMan.metodo }).click()
+        await this.page.locator('input[type="file"]').setInputFiles('tests/support/fixtures' + deliveryMan.cnh)
 
-        await this.page.submit()
+        await this.submit()
+    }
+
+    async alertHaveText(target) {
+        await expect(this.page.locator('.alert-error')).toHaveText(target)
     }
 }

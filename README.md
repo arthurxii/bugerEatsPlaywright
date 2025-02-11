@@ -1,3 +1,4 @@
+[![CI BugerEats Tests](https://github.com/arthurxii/bugerEatsPlaywright/actions/workflows/workflow.yml/badge.svg)](https://github.com/arthurxii/bugerEatsPlaywright/actions/workflows/workflow.yml)
 ## Descrição do projeto
 
 Projeto de testes e2e automatizados para aplicação BugerEats https://buger-eats.vercel.app/ utilizando Playwright e Javascript
